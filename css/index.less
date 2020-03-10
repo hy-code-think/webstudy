@@ -1,0 +1,96 @@
+// 首页的less文件
+// 把common.less导入到这个文件
+@import "common";
+// @import 导入的意思，可以把另一个样式文件导入到一个样式文件
+@basefonte:50;
+body {
+    min-width: 320px;
+    width: 15rem;
+    margin: 0 auto;
+    line-height: 1.5;
+    font-family: Arial,Helvetica;
+    background-color: #F2F2F2;
+}
+a {
+    text-decoration: none;
+}
+.search-content {
+    display: flex;
+    position: fixed;
+    top: 0;
+    left: 50%;
+    transform: translate(-50%);
+    width: 15rem;
+    // 有点不太理解
+    height: 88rem / @basefonte;
+    background-color: #FFC001;
+    .classify {
+        width: 44rem / @basefonte;
+        height: 70rem / @basefonte;
+        margin: 11rem / @basefonte 25rem / @basefonte 7rem / @basefonte 24rem / @basefonte;
+        background: url(../images/classify.png)  no-repeat;
+        background-size: 44rem / @basefonte 70rem / @basefonte;
+    }
+    .serach {
+        flex: 1;
+        input {
+            height: 66rem / @basefonte;
+            border-radius: 33rem / @basefonte;
+            border: none;
+            background-color: #FFF2CC;
+            margin-top: 12rem / @basefonte;
+            font-size: 25rem / @basefonte;
+            padding-left: 55rem / @basefonte;
+            color: #757575;
+            width: 100%;
+            outline: none;
+        }
+    }
+    .login {
+        width: 75rem / @basefonte;
+        height: 70rem / @basefonte;
+        line-height: 70rem / @basefonte ;
+        margin: 10rem / @basefonte;
+        font-size: 25rem / @basefonte;
+        text-align: center;
+        color: #fff;
+    }
+}
+.banner {
+    width: 750rem / @basefonte;
+    height: 368rem / @basefonte;
+    img {
+        width: 100%;
+        height: 100%;
+    }
+}
+.ad {
+    display: flex;
+    width: 750rem / @basefonte;
+    a {
+        flex: 1;
+        img {
+            width: 100%;
+        }
+    }
+}
+// nav
+nav {
+    width: 750rem / @basefonte;
+    a {
+        float: left;
+        width: 150rem / @basefonte;
+        height: 140rem / @basefonte;
+        text-align: center;
+        img {
+            display: block;
+            width: 82rem / @basefonte;
+            height: 82rem / @basefonte;
+            margin: 10rem / @basefonte auto 0;
+        }
+        span {
+            font-size: 25rem / @basefonte;
+            color: #333;
+        }
+    }
+}
